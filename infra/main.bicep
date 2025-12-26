@@ -14,7 +14,7 @@ param location string = resourceGroup().location
 param appName string = 'bogglegame'
 
 @description('GitHub repository URL for Static Web App deployment')
-param repositoryUrl string = ''
+param repositoryUrl string = 'https://github.com/jakebayliss/boggle.git'
 
 @description('GitHub branch for deployment')
 param branch string = 'main'
