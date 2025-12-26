@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { GameState } from '@/hooks/useSignalR';
+import { GameState, SubmitWordResult } from '@/hooks/useSignalR';
 import { GameBoard } from './GameBoard';
 
 interface GameRoomProps {
@@ -11,7 +11,7 @@ interface GameRoomProps {
   onLeaveRoom: () => Promise<void>;
   onStartGame: () => Promise<unknown>;
   onResetGame: () => Promise<unknown>;
-  onSubmitWord: (word: string) => Promise<unknown>;
+  onSubmitWord: (word: string) => Promise<SubmitWordResult | null>;
 }
 
 export function GameRoom({ 

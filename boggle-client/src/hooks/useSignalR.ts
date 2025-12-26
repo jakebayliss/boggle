@@ -25,6 +25,12 @@ export interface GameRoom {
   hostUsername: string;
 }
 
+export interface SubmitWordResult {
+  success: boolean;
+  message?: string;
+  points?: number;
+}
+
 const HUB_URL = process.env.NEXT_PUBLIC_HUB_URL || 'http://localhost:5000/gameHub';
 
 export function useSignalR() {
