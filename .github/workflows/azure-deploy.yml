@@ -31,8 +31,10 @@ jobs:
               - 'infra/**'
             backend:
               - 'BoggleGame.Server/**'
+              - '.github/workflows/**'
             frontend:
               - 'boggle-client/**'
+              - '.github/workflows/**'
 
   # ============================================================
   # Deploy Infrastructure (only if infra/ changed)
