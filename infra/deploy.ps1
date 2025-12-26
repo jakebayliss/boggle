@@ -27,7 +27,7 @@ param(
     
     [string]$ResourceGroupName = '',
     
-    [string]$RepositoryUrl = '',
+    [string]$RepositoryUrl = 'https://github.com/jakebayliss/boggle.git',
     
     [string]$Branch = 'main'
 )
